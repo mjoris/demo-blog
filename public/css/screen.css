@@ -1,0 +1,157 @@
+/**
+ * Stylesheet for Blog
+ *
+ * @media	screen, projection
+ * @author	Bram(us) Van Damme <bramus.vandamme@kahosl.be>
+ * @author	Kevin Picalausa <kevin.picalausa@odisee.be>
+ */
+
+	/**
+	 * CSS Clearfix
+	 * @see http://www.positioniseverything.net/easyclearing.html
+	 */
+		.clearfix:after {
+			content: ".";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+
+		.ie6 .clearfix {
+			display: inline-block;
+		}
+
+		.ie7 .clearfix {
+			zoom: 1;
+		}
+
+	/**
+	 * General Page Structure
+	 */
+
+		html, body {
+			height: 100%;
+		}
+
+		body {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 300;
+			line-height: 1.48;
+			background-color: #dfdfdf;
+		}
+
+		a {
+			color: #009ACD;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #003366;
+		}
+
+		.mute {
+			color: #ccc;
+			font-style: italic;
+		}
+
+		header h1 a {
+			font-size: 2em;
+			color: rgb(51, 51, 51);
+			text-decoration: none;
+		}
+
+		#siteWrapper {
+			margin: 0 auto;
+			margin-top: 1.0rem;
+			padding: 1.0rem;
+			max-width: 64rem;
+			min-width: 32rem;
+			border-radius: 1rem 1rem 0 0;
+			background-color: #FFF;
+		}
+
+		p, dl {
+			margin: 1.4em 0;
+		}
+
+		p.breadcrumb {
+			margin-top: 0;
+			font-style: italic;
+			font-size: 0.8em;
+		}
+
+		.blogposts article, .blogpost article, .comments article, .author article {
+			padding: 2em 0;
+		}
+
+		.blogpost article, .author article, section.authors, section.authorblogposts, section.comments {
+			padding: 2em 0 0 0;
+		}
+
+		.blogposts h1, .blogpost h1, .author h1, .authors h1, .comments h1, .authorblogposts h1 {
+			font-size: 1.75em;
+			line-height: 1;
+			margin: 0;
+		}
+
+		.blogposts article h1::before{
+			content: "→ ";
+		}
+
+		.blogposts article h1 a{
+			color: rgb(51, 51, 51);
+		}
+
+		.blogposts article h1 a:hover{
+			color: #009ACD;
+		}
+
+		.authors ul, .authorblogposts ul {
+			padding-top: 1em;
+		}
+
+		.blogposts footer p, .blogpost footer p, .comments footer p {
+			margin: 0;
+			margin-top: 1rem;
+			font-size: 0.8em;
+		}
+
+		.blogpost blockquote, .comments blockquote {
+			padding-left: 1em;
+			border-left: 1px solid #ccc;
+		}
+
+		.authors li a, .authorblogposts li a {
+			background: transparent url(../img/icn_profile.png) no-repeat 0 50%;
+			padding: 0.2em 1.2em;
+			font-size: 1.2em;
+		}
+
+		.author dl dt {
+			width: 20%;
+			float: left;
+			text-align: right;
+			clear: left;
+			margin-bottom: 0.2em;
+		}
+
+		.author dl dd {
+			width: 75%;
+			float: right;
+		}
+
+		[role="contentinfo"] {
+			margin: 0 auto;
+			margin-top: 1em;
+			padding: 2rem 0;
+			font-size: 0.8em;
+			color: #999;
+			text-align: center;
+			max-width: 66rem;
+			min-width: 32rem;
+			border-radius: 0 0 1rem 1rem ;
+			background-color: #FFF;
+		}
+
+/*EOF*/
