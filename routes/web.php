@@ -12,6 +12,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+/*
+ *  /
+ *  /blogposts/{id}
+ *  /blogposts/{id}/comments
+ *  /authors
+ *  /authors/{id}
+ *  /authors/{id}/blogposts
+ *
+ * */
+
+
 Route::get('/', function(){
     return redirect(URL::to('/blog'));
 });

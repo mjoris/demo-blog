@@ -1,7 +1,7 @@
 {{-- extend the parent tpl --}}
 @extends('master')
 {{-- set the pagetitle in the parent tpl --}}
-@section('title', 'My Blog &raquo; Authors &raquo; Detail &raquo; Blogposts')
+@section('title', 'My Blog » Authors » Detail » Blogposts')
 
 
 @section('content')

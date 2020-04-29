@@ -1,7 +1,7 @@
 {{-- extend the parent tpl --}}
 @extends('master')
 {{-- set the pagetitle in the parent tpl --}}
-@section('title', 'My Blog &raquo; Blogposts &raquo; Authors - Detail')
+@section('title', 'My Blog » Blogposts » Authors - Detail')
 
 @section('content')
     <p class="breadcrumb"><a href="{{ url('/') }}/">My Blog</a> &raquo; <a href="{{ url('/') }}/authors">Authors</a> &raquo; {{ $author->firstname }} {{ $author->lastname }}</p>
@@ -21,7 +21,7 @@
                 <dt>Location</dt>
                 <dd>{{ $author->location }}</dd>
                 <dt>Blogposts</dt>
-                <dd><a href="{{ url('/') }}/authors/{{ $author->id }}/blogposts">Show blogposts &rarr;</a></dd>
+                <dd><a href="{{ url('/authors/' . $author->id . '/blogposts') }}">Show blogposts &rarr;</a></dd>
             </dl>
         </article>
     </section>

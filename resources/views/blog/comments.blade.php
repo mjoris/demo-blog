@@ -1,7 +1,7 @@
 {{-- extend the parent tpl --}}
 @extends('master')
 {{-- set the pagetitle in the parent tpl --}}
-@section('title', 'My Blog &raquo; Blogposts &raquo; Comments')
+@section('title', 'My Blog » Blogposts » Comments')
 
 @section('content')
 <p class="breadcrumb"><a href="{{ url('/') }}/">My Blog</a> &raquo; <a href="{{ url('blog') }}">Blogposts</a> &raquo; <a href="{{ url('blogposts/' . $blogpost->id)}}">{{ $blogpost->title }}</a> &raquo; Comments</p>
